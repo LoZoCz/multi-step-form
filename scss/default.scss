@@ -1,0 +1,28 @@
+@import "../scss/colors-fonts.scss";
+
+* {
+  font-family: inherit;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: $font-name, sans-serif;
+  font-size: $font-size;
+  background-color: $neut-clr-3;
+
+  #root {
+    height: 100vh;
+    display: grid;
+    place-items: center;
+
+    .main-cont {
+      display: grid;
+      grid-template-columns: 1fr 2.5fr;
+      padding: 1rem;
+      border-radius: 1rem;
+      background-color: $neut-clr-5;
+      height: 35rem;
+    }
+  }
+}

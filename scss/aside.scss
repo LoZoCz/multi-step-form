@@ -1,0 +1,60 @@
+@import "./colors-fonts.scss";
+
+.indicator-wrapper {
+  padding: 2rem 6rem 1rem 1rem;
+  border-radius: 1rem;
+  background: url("../assets/images/bg-sidebar-desktop.svg");
+  background-size: cover;
+
+  .indicator-list {
+    list-style: none;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    counter-reset: myCounter;
+    padding-left: 3rem;
+
+    .indicator-item {
+      position: relative;
+      counter-increment: myCounter;
+
+      .indi-number {
+        margin: 0;
+        font-weight: 100;
+        color: $neut-clr-2;
+        font-size: 0.8rem;
+      }
+
+      .indi-title {
+        margin: 0;
+        font-weight: 600;
+        color: $neut-clr-5;
+        font-size: 1rem;
+      }
+
+      &::after {
+        content: counter(myCounter);
+        color: $neut-clr-5;
+        border: 1px solid $neut-clr-5;
+        width: 2rem;
+        aspect-ratio: 1;
+        border-radius: 50%;
+        position: absolute;
+        top: 50%;
+        left: -2.75rem;
+        transform: translateY(-50%);
+        display: grid;
+        place-items: center;
+        font-family: inherit;
+        font-weight: 600;
+      }
+
+      &[data-active="true"]::after {
+        color: $prim-clr-1;
+        border: none;
+        background-color: $prim-clr-4;
+      }
+    }
+  }
+}

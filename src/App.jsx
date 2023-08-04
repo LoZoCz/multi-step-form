@@ -1,10 +1,12 @@
+import { Aside } from "../components/Aside";
 import "../scss/default.scss";
-import { useState } from "react";
-
 function App() {
-  const [count, setCount] = useState(0);
-
-  return <h1 onClick={setCount(count + 1)}>LoZo count</h1>;
+  return (
+    <main className="main-cont">
+      <Aside />
+      <form action="" className="main-form"></form>
+    </main>
+  );
 }
 
 export default App;

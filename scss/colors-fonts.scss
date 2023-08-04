@@ -1,8 +1,20 @@
-@font-face {
-  font-family: "Ubuntu";
-  src: url("../assets/fonts/Ubuntu-Bold.ttf"),
-    url("../assets/fonts/Ubuntu-Medium.ttf"),
-    url("../assets/fonts/Ubuntu-Regular.ttf");
-}
+@import url("https://fonts.bunny.net/css?family=ubuntu:300,400,500,700");
 
 $font-name: "Ubuntu";
+$font-size: 16px;
+
+$font-wg-100: 400;
+$font-wg-200: 500;
+$font-wg-300: 700;
+
+$prim-clr-1: #02295a;
+$prim-clr-2: #473dff;
+$prim-clr-3: #adbeff;
+$prim-clr-4: #bfe2fd;
+$prim-clr-5: #ed3548;
+
+$neut-clr-1: #9699ab;
+$neut-clr-2: #d6d9e6;
+$neut-clr-3: #f0f6ff;
+$neut-clr-4: #fafbff;
+$neut-clr-5: #ffffff;
